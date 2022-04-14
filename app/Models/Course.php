@@ -8,4 +8,19 @@ use Illuminate\Database\Eloquent\Model;
 class Course extends Model
 {
     use HasFactory;
+
+    protected $fillable = [
+        'name',
+        'image',
+        'courseColor',
+        'professorColor',
+        'backgroundColor',
+        'buttonText',
+        'buttonLink',
+        'buttonColor',
+        'shadow',
+        'stars',
+        'professor_id',
+        'language_id',
+    ];
 }
